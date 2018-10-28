@@ -1,0 +1,20 @@
+.h-min-height-100 {
+    min-height: 100%!important;
+}
+
+.my-auto {
+    margin-top: auto!important;
+    margin-bottom: auto!important;
+}
+
+.opacity-0 {
+    opacity: 0;
+}
+
+.opacity-1 {
+    opacity: 1;
+}
+
+.border,.border-left,.border-right,.border-top,.border-bottom {
+     border-color: var(--border-color)!important;
+ }

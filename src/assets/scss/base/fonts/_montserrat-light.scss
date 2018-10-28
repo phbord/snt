@@ -1,0 +1,10 @@
+@font-face {
+  font-family: 'Montserrat-light';
+  src: url('#{$montserrat-font-path}/montserrat-light.eot');
+  src: url('#{$montserrat-font-path}/montserrat-light.eot?#iefix') format('embedded-opentype'),
+       url('#{$montserrat-font-path}/montserrat-light.woff2') format('woff2'),
+       url('#{$montserrat-font-path}/montserrat-light.woff') format('woff'),
+       url('#{$montserrat-font-path}/montserrat-light.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}

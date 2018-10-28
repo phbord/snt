@@ -1,0 +1,61 @@
+:root {
+    --light: #fff;
+    --dark: #000;
+    --primary: #006BA3; //blue
+    --secondary: #646464; //grey
+    --success: #018001; //green
+    --danger: #BF0000; //red
+    --warning: #EDED00; //yellow
+    --info: #FF9900; //orange
+    --primary-light: #96C8E0;
+    --secondary-light: #CCC;
+    --success-light: #8ED48E;
+    --danger-light: #D48E8E;
+    --warning-light: #FAFAA7;
+    --info-light: #FFDEAB;
+
+    --bg-layout: #eee;
+    //--bg-header: #006BA3;
+    --bg-header: #FF0000;
+    --bg-header-dark: #AD0000;
+    --bg-search-bar-btn: #E3E8E8;
+    --bg-search-bar-btn-dark: #CACECE;
+    --bg-menu-panel: #003B59;
+    --bg-menu-panel-dark: #00293D;
+    --bg-menu-panel-title: #006BA3;
+    --bg-overlay: rgba(0,0,0,.25);
+    --bg-customer-appreciation: #F7FCFC;
+
+    --text-primary: #191919;
+
+    --search-bar-color: var(--primary);
+
+    --border-color: #ced4da;
+    //--border-color-header: var(--bg-menu-panel);
+    --border-color-header: var(--bg-header-dark);
+    --border-color-menu-panel: #5A5C61;
+}
+
+.bg-primary {
+    background-color: var(--primary);
+}
+
+.bg-secondary {
+    background-color: var(--secondary);
+}
+
+.bg-success {
+    background-color: var(--success);
+}
+
+.bg-danger {
+    background-color: var(--danger);
+}
+
+.bg-warning {
+    background-color: var(--warning);
+}
+
+.bg-info {
+    background-color: var(--info);
+}

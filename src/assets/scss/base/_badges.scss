@@ -1,0 +1,49 @@
+.badge {
+    top: -5.5px;
+    right: -7.5px;
+    width: 15px;
+    height: 15px;
+    border-radius: 7.5px;
+
+    span {
+        font-family: var(--font-family-default);
+        font-size: .85rem;
+        font-weight: var(--font-weight-light-default);
+        font-style: normal;
+    }
+}
+
+//COLOR
+.badge-primary {
+    background-color: var(--primary);
+}
+
+//NOTES
+.note {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 1px solid var(--light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--success);
+
+    &:before {
+        content: "";
+        border-radius: 50%;
+        background-color: var(--danger);
+    }
+}
+
+.note--4:before {
+    width: calc((25px/5)*4);
+    height: calc((25px/5)*4);
+    border-radius: 50%;
+}
+
+.note--2-5:before {
+    width: calc((25px/5)*2.5);
+    height: calc((25px/5)*2.5);
+    border-radius: 50%;
+}

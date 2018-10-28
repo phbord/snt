@@ -1,0 +1,30 @@
+doctype HTML
+html(lang="fr")
+    head
+        include ../layouts/head
+
+    body
+        //OVERLAY
+        .l-overlay.opacity-0.d-none.d-md-none
+
+        //HEADER
+        include ../layouts/header
+
+        .l-container.d-flex.h-min-height-100
+            
+            //MAIN PANEL (left)
+            aside.l-main-panel.border-right
+                .container-fluid
+                    .d-flex.flex-column.align-items-start.align-content-center
+                        include ../layouts/main-panel_customer_appreciation
+
+            //WRAPPER (center + right)
+            .l-wrapper.w-100
+                .container-fluid
+                    include ../components/wrapper_customer_appreciation
+
+        //FOOTER
+        include ../layouts/footer
+
+        //SCRIPTS
+        include ../layouts/scripts

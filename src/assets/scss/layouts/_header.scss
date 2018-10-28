@@ -1,0 +1,135 @@
+.l-header {
+    left: 0;
+    right: 0;
+    z-index: 10;
+    background-color: var(--bg-header);
+    color: var(--light);
+
+    a,button {
+        padding-top: .25rem;
+        padding-bottom: .25rem;
+
+        &:hover,&.active {
+            background-color: var(--bg-header-dark);
+        }
+    }
+
+    label {
+        margin-bottom: 0;
+    }
+
+    input {
+        border-radius: .25rem 0 0 .25rem;
+    }
+
+    .border-left,.border-right {
+        border-color: var(--border-color-header)!important;
+    }
+
+
+    .nav {
+        height: 100%;
+        display: flex!important;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: stretch;
+    }
+
+    .nav-item {
+        height: 100%;
+        align-self: center;
+        }
+
+    a.nav-link {
+        height: 100%;
+        display: flex!important;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: stretch;
+
+        span {
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+    }
+
+    .l-header--search-bar {
+        height: 100%;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .c-search-bar {
+        height: 100%;
+    }
+
+    .l-header--title {
+        margin-bottom: 0;
+        display: inline-block;
+        i {
+            font-size: 2.25rem;
+        }
+        span {
+            font-size: 1.6rem;
+            font-weight: var(--font-weight-light-default);
+        }
+    }
+
+    .l-header--account {
+        i {
+            font-size: 1.7rem;
+        }
+    }
+
+    .btn--main-panel,.btn--menu {
+        i {
+            font-size: 1.7rem;
+        }
+    }
+
+    .btn--main-panel {
+        &:hover:not(.active),&.active:not(:hover) {
+            border-right-color: var(--bg-search-bar-btn)!important;
+            background-color: var(--bg-search-bar-btn)!important;
+
+            i {
+                color: var(--bg-header);
+            }
+        }
+
+        i {
+            font-size: 1.7rem;
+        }
+    }
+
+    .btn--menu {
+        &:hover {
+            i {
+                color: var(--light);
+            }
+        }
+        &.active {
+            background-color: var(--bg-menu-panel);
+        }
+    }
+}
+
+.c-search-bar {
+    .form-control {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+    .btn {
+        height: calc(2.25rem + 2px);
+        border-radius: 0 .25rem .25rem 0;
+        border-color: var(--border-color);
+        background-color: var(--bg-search-bar-btn);
+        color: var(--bg-menu-panel-dark);
+        font-size: 1.3rem;
+
+        &:hover {
+            background-color: var(--bg-search-bar-btn-dark)
+        }
+    }
+}

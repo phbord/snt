@@ -1,0 +1,92 @@
+@font-face {
+  font-family: "iconfont-2.0";
+  src: url('../fonts/iconfont/iconfont-2.0.eot');
+  src: url('../fonts/iconfont/iconfont-2.0.eot?#iefix') format('eot'),
+  url('../fonts/iconfont/iconfont-2.0.woff2') format('woff2'),
+  url('../fonts/iconfont/iconfont-2.0.woff') format('woff'),
+  url('../fonts/iconfont/iconfont-2.0.ttf') format('truetype'),
+  url('../fonts/iconfont/iconfont-2.0.svg#iconfont-2.0') format('svg');
+}
+
+@mixin icon-styles {
+  font-family: "iconfont-2.0";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  // speak: none; // only necessary if not using the private unicode range (firstGlyph option)
+  text-decoration: none;
+  text-transform: none;
+}
+
+%icon {
+  @include icon-styles;
+}
+
+@function icon-char($filename) {
+  $char: "";
+
+  @if $filename == menu-burger {
+  $char: "\E001";
+}
+  @if $filename == menu-panel {
+  $char: "\E002";
+}
+  @if $filename == bell {
+  $char: "\E003";
+}
+  @if $filename == power {
+  $char: "\E004";
+}
+  @if $filename == profil {
+  $char: "\E005";
+}
+  @if $filename == networking {
+  $char: "\E006";
+}
+  @if $filename == arrow-right {
+  $char: "\E007";
+}
+  @if $filename == search {
+  $char: "\E008";
+}
+
+@return $char;
+}
+
+@mixin icon($filename, $insert: before, $extend: true) {
+&:#{$insert} {
+  @if $extend {
+    @extend %icon;
+  } @else {
+    @include icon-styles;
+  }
+  content: icon-char($filename);
+}
+}
+
+.icon-menu-burger {
+  @include icon(menu-burger);
+}
+.icon-menu-panel {
+  @include icon(menu-panel);
+}
+.icon-bell {
+  @include icon(bell);
+}
+.icon-power {
+  @include icon(power);
+}
+.icon-profil {
+  @include icon(profil);
+}
+.icon-networking {
+  @include icon(networking);
+}
+.icon-arrow-right {
+  @include icon(arrow-right);
+}
+.icon-search {
+  @include icon(search);
+}

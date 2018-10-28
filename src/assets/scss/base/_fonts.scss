@@ -1,0 +1,14 @@
+:root {
+    --font-family-default: 'Roboto', sans-serif;
+    --font-weight-light-default: 300;
+    --font-weight-normal-default: 400;
+    --font-weight-bold-default: 700;
+    --font-weight-black-default: 900;
+}
+
+html {
+    //color: ;
+    font-family: var(--font-family-default);
+    font-weight: var(--font-weight-normal-default);
+    font-size: 62.5%;
+}

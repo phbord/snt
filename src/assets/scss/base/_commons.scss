@@ -1,0 +1,43 @@
+body {
+    height: 100vh;
+    background-color: var(--bg-layout);
+    color: var(--text-primary);
+}
+
+i,
+a,
+a:hover,
+a:focus,
+a:active,
+button {
+    color: inherit;
+    text-decoration: none;
+}
+
+a,button {
+    outline: 0!important;
+    outline-offset: 0!important;
+    outline-style: none!important;
+    transition: all 500ms ease;
+}
+
+button {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+//MS bootstrap scrollbar
+@-ms-viewport {
+    width: auto !important;
+}

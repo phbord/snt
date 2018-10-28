@@ -1,0 +1,41 @@
+header.l-header.position-fixed
+    .d-flex.align-items-stretch.justify-content-between
+        div
+            .d-flex.align-items-stretch
+                //MAIN PANEL BUTTON
+                button.btn--main-panel.active.border-right.px-3.d-md-none(type='button')
+                    i.icon-menu-panel
+                //LOGO GROUP
+                a.l-header--title-group(href='/').px-4
+                    h1.l-header--title.d-flex.align-items-center.justify-content-center
+                        i.icon-networking.align-middle.mr-2
+                        span SocialNetwork
+
+        //NAVIGATION GROUP
+        .l-header--nav-group.d-inline-flex.align-items-center.justify-content-center
+            //SEARCH BAR
+            .l-header--search-bar.d-none.d-md-block
+                include ./search-bar
+            //MAIN MENU
+            .d-none.d-md-block
+                include ./main-menu-list
+            //ACCOUNT
+            .l-header--account.h-100
+                ul.d-flex.align-items-center.h-100.border-left
+                    li.l-header--notifications.d-flex.align-items-stretch.h-100
+                        button.btn--nofications.px-3(type='button')
+                            i.icon-bell.position-relative
+                                span.badge.badge-primary.position-absolute.d-flex.justify-content-center.align-items-center
+                                    span.align-middle 12
+                    li.l-header--login.d-flex.align-items-stretch.h-100
+                        button.btn--login.px-3(type='button')
+                            i.icon-profil
+                    li.l-header--logout.d-flex.align-items-stretch.h-100
+                        button.btn--logout.px-3(type='button')
+                            i.icon-power
+                    //MENU PANEL BUTTON
+                    li.l-header--menu.d-flex.align-items-stretch.h-100.border-left.d-md-none
+                        button.btn--menu.px-3(type='button')
+                            i.icon-menu-burger
+
+include ./menu-panel
