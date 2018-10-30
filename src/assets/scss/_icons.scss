@@ -51,6 +51,27 @@
   @if $filename == search {
   $char: "\E008";
 }
+  @if $filename == star-full {
+  $char: "\E009";
+}
+  @if $filename == email-3 {
+  $char: "\E00A";
+}
+  @if $filename == building-15 {
+  $char: "\E00B";
+}
+  @if $filename == heart {
+  $char: "\E00C";
+}
+  @if $filename == location {
+  $char: "\E00D";
+}
+  @if $filename == bubble {
+  $char: "\E00E";
+}
+  @if $filename == thunder {
+  $char: "\E00F";
+}
 
 @return $char;
 }
@@ -89,4 +110,25 @@
 }
 .icon-search {
   @include icon(search);
+}
+.icon-star-full {
+  @include icon(star-full);
+}
+.icon-email-3 {
+  @include icon(email-3);
+}
+.icon-building-15 {
+  @include icon(building-15);
+}
+.icon-heart {
+  @include icon(heart);
+}
+.icon-location {
+  @include icon(location);
+}
+.icon-bubble {
+  @include icon(bubble);
+}
+.icon-thunder {
+  @include icon(thunder);
 }
