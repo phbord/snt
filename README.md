@@ -5,5 +5,6 @@
  - `npm intall`
  
 ## Launch Gulp tasks
+ - url : `http://localhost:3000/pages/layout_customer_appreciation.html`
  - compile and reload page : `gulp serve`
  - generate iconfonts `gulp iconfont`
